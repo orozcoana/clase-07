@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css">
+    <script src="main.js"></script>
+    <style>
+        titulo-formulario {
+
+            color: rgba(204, 2, 69, 0.603);
+            font-size: 24px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Encabezado -->
+    <header>
+        <h1>Formulario AFIP 420</h1>
+        <p>Este formulario te va a robar la vida</p>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#seccion-1">Sección 1</a></li>
+            <li><a href="#seccion-2">Sección 2</a></li>
+            <li><a href="#seccion-3">Sección 3</a></li>
+        </ul>
+    </nav>
+    <!-- Fin encabezado -->
+    <!-- Contenido -->
+    <form action="">
+
+        <fieldset>
+            <legend>
+                <titulo-formulario>Datos personales</titulo-formulario>
+            </legend>
+            <label for="nombre-apellido">Nombres y Apellidos</label>
+            <input id="nombre-apellido" type="text" placeholder="Nombres y Apellidos">
+            <br>
+            <label for="birth-date">Fecha de nacimiento</label>
+            <input id="birth-date" type="date" placeholder="Fecha de nacimiento">
+            <br>
+            <label for="age">Edad</label>
+            <input id="age" type="number" placeholder="Edad">
+            <br>
+            <!-- Tipos de sangre -->
+            <label for="blood-type">Seleccione tipo de sangre</label>
+            <span id="blood-type">
+                <label for="tipo-de-sangre-0">0</label>
+                <input id="tipo-de-sangre-0" name="tipo-de-sangre" type="radio">
+                <label for="tipo-de-sangre-A">A</label>
+                <input id="tipo-de-sangre-A" name="tipo-de-sangre" type="radio">
+                <label for="tipo-de-sangre-B">B</label>
+                <input id="tipo-de-sangre-B" name="tipo-de-sangre" type="radio">
+                <label for="tipo-de-sangre-AB">AB</label>
+                <input id="tipo-de-sangre-AB" name="tipo-de-sangre" type="radio"> </span>
+            <br>
+            <!-- Tipo de sangre -->
+            <label for="blood-rh">RH de sangre</label>
+            <select id="blood-rh" name="rh-de-sangre" id="rh-de-sangre">
+                <option value="">Seleccione su RH</option>
+                <option value="+">+</option>
+                <option value="-">-</option>
+                <option value="0">0</option>
+            </select>
+            <br>
+            <label for="mail">Email</label>
+            <input id="mail" type="email" placeholder="Email">
+            <br>
+            <label for="telefono">Teléfono</label>
+            <input id="telefono" type="number" placeholder="Teléfono">
+            <br>
+            <label for="dni">Documento de identidad</label>
+            <input id="dni" type="number" placeholder="DNI">
+            <br>
+            <label for="credit-card-number">Nro de tarjeta de crédito</label>
+            <input id="credit-card-number" type="number" placeholder="Tarjeta de crédito">
+            <br>
+        </fieldset>
+
+    </form>
+    <form action="">
+        <fieldset>
+            <legend>
+                <titulo-formulario> Hobbies </titulo-formulario>
+            </legend>
+            <div> <label for="tipo-hobby">Actividades de tiempo libre:</label> <br>
+                <input id="tipo-hobby" type="checkbox" name="hobby1" value="intrument"> Dibujar <br>
+                <input type="checkbox" name="hobby2" value="movie"> Mirar películas <br>
+                <input type="checkbox" name="hobby3" value="read"> Leer <br>
+                <input type="checkbox" name="hobby4" value="excercise"> Hacer ejercicio <br>
+                <p>Otro: <input type="text" name="hobby5"> </p> <br>
+            </div>
+            <label for="free-time">¿Cuánto tiempo libre tiene en la semana?</label> <br>
+            <input id="free-time" type="range" name="Tiempo-libre" min="0" max="168"> <br>
+            <label for="free-month">¿Cuál es el mes que más libre tiene?</label> <br>
+            <input id="free-month" type="month"> <br>
+            <label for="free-hour">¿A qué hora suele tener tiempo libre?</label> <br>
+            <input type="time">
+        </fieldset>
+
+    </form>
+
+    <form action="">
+        <fieldset>
+            <legend>
+                <titulo-formulario>Interés musical</titulo-formulario> </legend>
+                <label for="type-music">¿Qué tipo de música escuchás?</label> <br>
+                <input type="checkbox" name="Reggae" value="Reggae">Reggae <br>
+                <input type="checkbox" name="Rock" value="Rock">Rock<br>
+                <input type="checkbox" name="Pop" value="Pop">Pop<br>
+                <input type="checkbox" name="Jazz" value="Jazz">Jazz <br>
+                <input type="checkbox" name="Clasica" value="Clasica">Clásica <br>
+                <input type="checkbox" name="Indie" value="Indie">Indie<br>
+                <input type="checkbox" name="Electronica" value="Electronica">Electrónica <br>
+                <label for="fav-band">Banda favorita</label><br>
+                <input type="text" id="fav-band" > <br>
+                <span> <label for="instrument">¿Tocás algun instrumento?</label> <br>
+                <label for="si">Si</label>
+                <input id= "si" name="instrument" type="radio" >
+                <label for="no">No</label>
+                <input id= "no" name="instrument" type="radio" > </span><br>
+                <label for="nivel">¿Cuánto conocimiento tenes de ese instrumento?</label> <br>
+                
+                <select id="nivel" name="nivel" >
+                    <option value="">Seleccione su nivel</option>
+                    <option value="basico">Básico</option>
+                    <option value="intermedio">Intermedio</option>
+                    <option value="Avanzado">Avanzado</option>
+                </select>
+
+        </fieldset>
+    </form>
+    <!-- Fin contenido -->
+</body>
+
+</html>

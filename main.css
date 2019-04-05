@@ -1,0 +1,25 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;    
+}
+fieldset {
+}
+h1 {
+}
+input {
+}
+/*PSEUDO CLASS*/
+input:: placeholder {
+    color: blueviolet;
+}
+nav {
+color: cornflowerblue; }
+input {
+    border: none;
+}
+select {
+    C:/Users/Hedy%20Lamarr/Desktop/ADA/clase-06-master/formulario.html
+}
+form:last-child > fieldset {
+    background-color: darkcyan;
+} 
